@@ -1,0 +1,30 @@
+<div class="viewer-container">
+  <model-viewer
+    #mv
+    class="viewer"
+    alt="Failed to load model"
+    src="./assets/Earth_1_12756.glb"
+    background-color="black"
+    shadow-intensity="0"
+    camera-controls
+    touch-action="pan-y"
+    disable-pan
+    disable-tap
+    interaction-prompt="none"
+    (load)="init(mv)">
+
+    <button
+      *ngFor="let item of data; index as i"
+      class="hotspot"
+      [attr.slot]="'hotspot-' + i"
+      [attr.data-position]="position(item)"
+      [attr.data-normal]="normal(item)"
+      >
+      <div class="annotation">{{getDate(item.timestamp) | date:'medium'}}</div>
+    </button>
+  </model-viewer>
+</div>
+
+<div class="ui-container">
+
+</div>

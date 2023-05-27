@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { property as r } from \"./property.js\";\n/**\n * @license\n * Copyright 2017 Google LLC\n * SPDX-License-Identifier: BSD-3-Clause\n */\nfunction t(t) {\n  return r({\n    ...t,\n    state: !0\n  });\n}\nexport { t as state };\n//# sourceMappingURL=state.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
